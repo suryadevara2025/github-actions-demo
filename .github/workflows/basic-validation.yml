@@ -17,6 +17,7 @@ jobs:
       - name: Run basic validation
         run: |
           echo "Starting basic validation..."
-          test -f README.md
+          test -f
+          test-file-that-does-not-exist.txt
           echo "README.md exists."
           echo "Basic validation completed successfully."
