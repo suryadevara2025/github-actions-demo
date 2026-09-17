@@ -1,0 +1,22 @@
+name: Basic Validation
+
+on:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Run basic validation
+        run: |
+          echo "Starting basic validation..."
+          test -f README.md
+          echo "README.md exists."
+          echo "Basic validation completed successfully."
