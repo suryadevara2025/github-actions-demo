@@ -1,2 +1,3 @@
 # github-actions-demo
-github actions workflow
+GitHub actions workflow is working successfully
+This repository is used to practice GitHub Actions
